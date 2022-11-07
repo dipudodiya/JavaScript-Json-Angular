@@ -1,0 +1,29 @@
+p {
+  color: #FBE7A1;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 5px #FBE7A1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+body {
+  background-image: url(img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+
+}
+
+hr {
+  width: 10%;
+}
+
+body,
+html {
+  height: 100%
+}

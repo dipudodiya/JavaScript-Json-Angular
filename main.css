@@ -1,0 +1,98 @@
+.container {
+
+    display: grid;
+    grid-template-areas: "header header header header header header "
+        " . Data Data Data Data . "
+        "footer footer footer footer footer footer  ";
+    grid-gap: 11px;
+
+}
+
+body {
+    background-image: url(img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.topic {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+
+
+
+
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+    text-align: left;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #A0CFEC;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #CFECEC;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    color: #adebeb;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+.con {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.con a {
+    color: #A0CFEC;
+    font-size: 20px;
+    text-align: right;
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+a:hover,
+a:active {
+    background-color: #306754;
+}
+
+.foot {
+    color: #A0CFEC;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.write {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}

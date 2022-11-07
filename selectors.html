@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 1</title>
+    <link rel="stylesheet" href="selectors.css">
+    <script src="selectors.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sticky" style="grid-area: Data;">
+
+            <ul class="con">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="Update.html">Contact Us</a> </li>
+            </ul>
+
+            <br>
+            <br>
+
+
+
+            <ul class="links">
+
+                <li><a href="#Intro">Introduction</a></li>
+                <li><a href="#Advan">Advantages</a></li>
+                <li><a href="#Disadvan">Disadvantages</a></li>
+                <li><a href="#Usage">Usage</a></li>
+                <li><a href="#Example">Example Project </a></li>
+            </ul>
+
+        </div>
+
+        <div style="grid-area: Data1;">
+            <a id="Intro">
+                <h2> Introduction to Javascript Selectors </h2>
+            </a>
+            <p class="write">
+                QuerySelector() method helps to search element within the document.
+javascript selector helps to find element that matches particular CSS selectors.
+if there is no match then it return null. 
+                The querySelector() method returns the first element that matches a CSS selector.
+                 To return all matches (not only the first), use the querySelectorAll() instead. 
+                 Both querySelector() and querySelectorAll() throw a SYNTAX_ERR exception if the selector(s)
+                  is invalid. There are different types of slectors. </p>
+                  <ul class="list2">
+                  <li> Universal selector </li> 
+                  <li> Type selector </li>
+                  <li> Class selector </li>
+                  <li> ID selector </li>
+                  <li> Attribute selector </li> 
+                  </ul>
+                  <p class="write">     The querySelector() and querySelectorAll() methods in JavaScript are particularly 
+                  user-friendly since they give programmers the opportunity to meet requirements and effectively 
+                  retrieve elements from an accessibility standpoint. In terms of parent and descendant search for 
+                  the first element
+                   at a time with acknowledgment or all elements at once, it offers a good deal of versatility.
+            </p>
+
+            <a id="Advan">
+                <h2> Advantages </h2>
+            </a>
+            <p class="write">
+            <ul class="list2">
+                <li> HTML elements may be "found" (selected) using selectors based on a 
+                    variety of criteria, including their tag name, id, classes, types, 
+                    attributes, values of attributes, and more.
+                </li>
+                <li>
+                    It is the most flexible by the programmer and is readily available 
+                    to obtain components within the page.
+                </li>
+                <li> It gives the customer the choice to choose a single selection or a 
+                    set of selectors, giving them the freedom to personalise and carry out 
+                    each demand effectively. </li>
+
+                
+            </ul>
+            </p>
+
+            <a id="Disadvan">
+                <h2> Disadvantages </h2>
+            </a>
+            <p class="write">
+            <ul class="list2">
+                <li>Query Selectors may return 'null' if no match is found
+                </li>
+               <li> It will raise a "SyntaxError" exception if there isn't any valid CSS selector. </li>
+
+            </ul>
+            </p>
+
+            <a id="Usage">
+                <h2> Usage </h2>
+                
+            </a>
+            <h4>  Select particular class  </h4>
+            
+            <p class="write"> To get the class's initial element, we must pair the class name with the (.) 
+                operator. We can see that the querySelector () starts its search at the beginning of the code
+                 in the output. When utilising CSS's ID selector, use (#). </p>
+                <p class="write"> To know more <a href="#Example"> Click Here </a>
+            </p>
+
+            <h4>  Select particular tag </h4>
+            
+            <p class="write"> We may also obtain one or more HTML 
+                 components by tag name using the querySelectorAll() function. The tag name is
+                 also the one argument required by the querySelectorAll() function.</p>
+                <p class="write"> To know more <a href="#Example2"> Click Here </a>
+            </p>
+
+            <h4>  Select particular tag with specific criteria</h4>
+            
+            <p class="write"> HTML 
+                components by tag name using the querySelectorAll() function. The tag name is
+                also the one argument required by the querySelectorAll() function and we need to add the 
+            specific criteria we want to add. </p>
+                <p class="write"> To know more <a href="#Example3"> Click Here </a>
+            </p>
+
+            <h4>  Select particular tag to give specific css </h4>
+            
+            <p class="write"> HTML 
+                components by tag name using the querySelectorAll() function. The tag name is
+                also the one argument required by the querySelectorAll() function and we need to add the 
+            specific criteria we want to add. ALso the css which is needed to add must be already connected with the code</p>
+                <p class="write"> To know more <a href="#Example4"> Click Here </a>
+            </p>
+
+            <h4>  Select particular tag with if condition</h4>
+            
+            <p class="write"> HTML 
+                components by tag name using the querySelectorAll() function. The tag name is
+                also the one argument required by the querySelectorAll() function and we need to add the 
+            specific criteria we want to add. ALso the css which is needed to add must be already connected with the code
+        We must use the specific syntax for the if condition to be used.</p>
+                <p class="write"> To know more <a href="#Example5"> Click Here </a>
+            </p>
+
+
+
+            <a id="Example">
+                <h2> Example 1</h2>
+            </a>
+            <p class="write"> 
+                To get the element using specific class name we can use
+                document.querySelectorAll("className").
+            </p>
+            <textarea> function demoSelector()
+                {
+                    var heading=document.querySelectorAll('.h2');
+                    heading.forEach(x=>{
+                        x.style.color='white';
+                      x.style.background='green';
+                    });
+                }
+                 </textarea>
+
+            <h2 class="h2"> To change the background color to green and text color to white click on button below </h2>
+            <button onclick="demoSelector()" id="button">Click Here</button>
+
+            <a id="Example2">
+                <h2> Example 2</h2> </a>
+            
+            <p class="write"> 
+                To get the element using specific tag name we can use
+                document.querySelectorAll("tagName").
+            </p>
+            <textarea> function demoSelector1()
+{
+   document.querySelectorAll('span').forEach((x,index)=>{
+    x.innerText+=` Text added successfully`;
+   });
+}
+                 </textarea>
+
+            <h2 class="head"> <span> To add text to the line click on button below </span> </h2>
+            <button onclick="demoSelector1()" id="button">Click Here</button>
+
+            <a id="Example3">
+            <h2> Example 3</h2> </a>
+            
+            <p class="write"> 
+                To get the element using specific tag name and specific criteria's 
+                document.querySelectorAll("tagname[style $='wordendignwith']").
+            </p>
+            <textarea> function demoSelector2()
+{
+  document.querySelectorAll("h2[align $='t']").forEach(x=>{
+    x.style.border="5px solid red";
+  })
+}
+            </textarea>
+
+            <h2 class="head" align="left">the text is given left align to give border click on button below </h2>
+            <h2 class="head" align="center">the text is given center align </h2>
+            <h2 class="head" align="right">the text is given right align to give border click on button below </h2>
+
+            <button onclick="demoSelector2()" id="button">Click Here</button>
+
+            <a id="Example4">
+            <h2> Example 4</h2></a>
+            
+            <p class="write"> 
+                To get the element using specific class name and tag name 
+                document.querySelector("tagname").classList.toggle('classname');
+            </p>
+            <textarea> function demoSelector3()
+                {
+                 document.querySelector("data").classList.toggle('head2');
+                }
+            </textarea> <br>
+            <br>
+
+            <data class="head"> To give this line the css of .head class click on the button below   </data> <br> <br>
+
+            <button onclick="demoSelector3()" id="button">Click Here</button>
+
+            <a id="Example5">
+            <h2> Example 5</h2> </a>
+            
+            <p class="write"> 
+                To get the element using specific  tag name and word in the content
+                document.querySelector("tagname") and if condition has x.textContent.toCase().includes('word') ;
+            </p>
+            <textarea> function demoSelector4(){
+                document.querySelectorAll("section").forEach(x => {
+                    if (x.textContent.toLocaleLowerCase().includes('davis')) {
+                    x.style.color = 'red';
+                    } });
+                }
+            </textarea> <br>
+            <br>
+
+            <section class="head"> To change the color of this line to red as it contains the word davis click on link below </section> <br> <br>
+
+            <button onclick="demoSelector4()" id="button">Click Here</button>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
